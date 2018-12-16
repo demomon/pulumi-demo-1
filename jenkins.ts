@@ -3,10 +3,12 @@ import * as k8s from "@pulumi/kubernetes";
 import * as input from "@pulumi/kubernetes/types/input";
 
 function createDeploymentArgs(args: JenkinsArgs): input.apps.v1.Deployment {
+    // cloudbees/cloudbees-core-cm:2.138.4.3
+    // bitnami/jenkins:2.150.1
     const image = args.image || {
         registry: "docker.io",
-        repository: "bitnami/jenkins",
-        tag: "2.121.2",
+        repository: "cloudbees/cloudbees-core-cm",
+        tag: "2.138.4.3",
         pullPolicy: "IfNotPresent",
     };
 
@@ -129,7 +131,7 @@ export class Instance extends pulumi.ComponentResource {
             metadata: {
                 name: args.name,
                 annotations: {
-                    "volume.beta.kubernetes.io/storage-class": `${args.storageClass || "standard" }`
+                    "volume.beta.kubernetes.io/storage-class": `${args.storageClass || "ssd" }`
                 },
             },
             spec: {
