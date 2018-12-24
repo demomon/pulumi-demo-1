@@ -1,5 +1,0 @@
-config:
-  demomon-pulumi-demo-2:isMinikube: "false"
-  demomon-pulumi-demo-2:password:
-    secure: AAABABTbR+zL3Tonlxz0FQoRI5rQb504HEnIfCgkVCHCL5LsQCvbBgcLfJsA3i3QhSj6OfRZbJA=
-  demomon-pulumi-demo-2:username: administrator

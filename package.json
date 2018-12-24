@@ -4,7 +4,10 @@
         "@types/node": "latest"
     },
     "dependencies": {
+        "@pulumi/gcp": "latest",
         "@pulumi/pulumi": "^0.16.7",
+        "@pulumi/aws": "latest",
+        "mime": "^2.2.2",
         "@pulumi/kubernetes": "^0.18.0"
     }
 }

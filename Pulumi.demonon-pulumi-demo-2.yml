@@ -1,0 +1,6 @@
+encryptionsalt: v1:CDFZmGKhPYk=:v1:eKkl7QrwibjI2FSD:4fh+nPTv4cNLzPCWtKuAxZ1k3a+/pg==
+config:
+  demomon-pulumi-demo-2:password:
+    secure: v1:k5BhzNUFKFvt6tvV:U3qyTbFr8UgA3ikIkeNxEgnk6hFuIO6BL+S65mTZGHmMpElwE7p0GA==
+  gcp:project: ps-dev-201405
+  gcp:zone: europe-west4-a
