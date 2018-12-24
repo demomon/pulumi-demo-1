@@ -124,7 +124,7 @@ Failed to install `kubernetes:rbac.authorization.k8s.io:Role         artifactory
 Probably due to missing rights, so probably have to execute the admin binding before the helm charts.
 
 ```bash
-error: Plan apply failed: roles.rbac.authorization.k8s.io "artifactory-artifactory" is forbidden: attempt to grant extra privileges: [{[get] [] [services] [] []} {[watch] [] [services] [] []} {[list] [] [services] [] []} {[get] [] [endpoints] [] []} {[watch] [] [endpoints] [] []} {[list] [] [endpoints] [] []} {[get] [] [pods] [] []} {[watch] [] [pods] [] []} {[list] [] [pods] [] []}] user=&{joostvdg-pulumi@ps-dev-201405.iam.gserviceaccount.com  [system:authenticated] map[user-assertion.cloud.google.com:[AM6SrXjdiAPWuRzgtkR/eeUtypmgxauZle+vOF2EvBnPRd7DtBxVbhq4JDxqwpi8ET96XrdHHjG8VYXkW2TIC8wlekPVoFIb9GhPVLpC2gisYW5LtgjRzazAAZk3Hd1KFbYdL5M9BGzqztaMlAPnMFu4SVak4HEwKploC0PEksmjaNm3J2GTYSQXIyPP5wTLjDrxDtVyCbulta+5ljMgSVo0EjLENV/Mzpsyp9j5bO/uMZku97oIOG+4qqjU2819xs2qzQNPooCxpjn+NdBR]]} ownerrules=[{[create] [authorization.k8s.io] [selfsubjectaccessreviews selfsubjectrulesreviews] [] []} {[get] [] [] [] [/api /api/* /apis /apis/* /healthz /openapi /openapi/* /swagger-2.0.0.pb-v1 /swagger.json /swaggerapi /swaggerapi/* /version /version/]}] ruleResolutionErrors=[]
+error: Plan apply failed: roles.rbac.authorization.k8s.io "artifactory-artifactory" is forbidden: attempt to grant extra privileges: ...
 ```
 
 ## Helm Charts
